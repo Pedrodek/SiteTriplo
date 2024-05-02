@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 150vh;
+    width: 100%;
+}
+
+html {
+}
+
+body {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-image: url(../imgbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pageTop {
+    position: relative;
+    grid-row: 1/1;
+    background: linear-gradient(340deg, rgb(242, 99, 137, .5), rgb(2, 94, 115, .5), rgb(2, 104, 115, .5), rgb(3, 166, 136, .5));
+}
+
+.pageTopBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-image: url(../imgbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    z-index: -1;
+}
+
+aside {
+    display: grid;
+    justify-items: center;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: #047f9b;
+    border: 2px solid #07b0d6;
+    border-radius: .2rem;
+    color: #ffebf1;
+}
+
+.first-section{
+    background-color: rgba(173, 162, 130, 0.92);
+}
+
+/*.intermediate {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 162, 130, .94);
+}*/
+
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.second-section {
+    background: linear-gradient(rgba(173, 162, 130, .94), rgba(173, 162, 130, .96), rgba(173, 162, 130, 1));
+}
