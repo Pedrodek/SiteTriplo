@@ -10,9 +10,6 @@ html, body {
     width: 100%;
 }
 
-html {
-}
-
 body {
     display: grid;
     grid-template-rows: 100vh 124vh 100vh 20vh;
@@ -109,7 +106,8 @@ aside.show {
 .hr-aside {
     height: 20%;
     width: 0%;
-    background-color: rgb(222, 222, 222);
+    background-color: #00d6d6;
+    border: 1px #00d6d6 solid;
     border-radius: 2rem;
     opacity: 0;
     transition: 1s all ease;
@@ -201,7 +199,7 @@ aside.show {
 
 .main-content {
     display: grid;
-    grid-template-rows: .4fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 2%;
     justify-items: center;
     align-items: center;
@@ -226,6 +224,7 @@ section {
     width: 88%;
     justify-items: center;
     align-items: center;
+    text-align: center;
     text-indent: 1rem;
 }
 
@@ -239,7 +238,6 @@ section {
     grid-template-rows: 25% 1fr;
     row-gap: 1%;
     height: 100%;
-    text-align: center;
     justify-items: center;
     align-items: center;
 }
@@ -255,7 +253,7 @@ section {
 
 .MeuGit {
     width: 80%;
-    height: 100%;
+    height: 80%;
 }
 
 .ss-yt {
@@ -275,20 +273,45 @@ footer {
     height: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
+    .pageTop h1{
+        font-size: 240%;
+        text-align: center;
+    }
     .main-content {
-        grid-template-rows: .5fr .8fr .8fr;
+        grid-template-rows: auto;
         font-size: 70%;
     }
     section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         width: 95%;
+        column-gap: 0;
+    }
+    .first-section {
+        grid-template-rows: 1.2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .first-section div {
+        padding: 1rem;
+        grid-template-rows: .5fr 1fr;
+        align-items: center;
+    }
+    .first-section div h3 {
+        align-self: center;
     }
     .MeuGit {
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 90%;
+    }
+    .second-section {
+        height: 100%;
+    }
+    .second-section div {
+        padding: .8rem;
     }
     .ss-yt {
-        width: 50%;
-        height: 40%;
+        width: 60%;
+        height: 80%;
     }
 }
