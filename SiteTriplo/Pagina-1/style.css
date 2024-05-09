@@ -279,7 +279,7 @@ section {
     position: absolute;
     background-color: #ffebf1c4;
     opacity: 0.1;
-    transform: translateX(645%) rotate(48deg);
+    transform: translateX(715%) rotate(61deg);
     transition: 1.4s all ease;
 }
 
@@ -309,7 +309,7 @@ fieldset {
 
 @media (min-width: 900px) {
     .quad.nonClicked:hover {
-        transform: translateX(620%) rotate(45deg) scale(1.2);
+        transform: translateX(690%) rotate(54deg) scale(1.2);
         cursor: pointer;
         opacity: .6;
         animation: glowin 10s ease-in-out infinite;

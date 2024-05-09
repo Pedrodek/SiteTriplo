@@ -28,3 +28,8 @@ quad.addEventListener('click', () => {
     quad.classList.toggle('clicked')
     quad.children.item(0).classList.toggle('clicked')
 })
+
+
+
+
+
