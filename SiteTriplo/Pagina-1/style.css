@@ -12,7 +12,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-rows: 100vh 124vh 100vh 20vh;
+    grid-template-rows: 100vh 130vh 100vh;
     grid-template-columns: 1fr;
     background-image: url(../images/imgbkg.png);
     background-size: cover;
@@ -308,7 +308,7 @@ fieldset {
 }
 
 @media (min-width: 900px) {
-    .quad:hover {
+    .quad.nonClicked:hover {
         transform: translateX(620%) rotate(45deg) scale(1.2);
         cursor: pointer;
         opacity: .6;
@@ -316,6 +316,7 @@ fieldset {
     }
     .quad.clicked:hover{
         background-color: #b2ffff;
+        cursor: pointer;
         animation: beat 3s infinite linear;
     }
 }

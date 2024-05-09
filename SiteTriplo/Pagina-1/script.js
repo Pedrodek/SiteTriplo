@@ -24,6 +24,7 @@ closeSidebar.addEventListener('click', () => {
 });
 
 quad.addEventListener('click', () => {
+    quad.classList.toggle('nonClicked')
     quad.classList.toggle('clicked')
     quad.children.item(0).classList.toggle('clicked')
 })
