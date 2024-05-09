@@ -5,19 +5,53 @@
 
 body {
    height: 120vh;
+   display: grid;
+   justify-items: center;
+   background-color: grey;
+}
+
+.resumo{
+    background-color: rgba(226, 140, 12, 0.897);
+}
+
+.nome{
+    width: 70%;
+}
+
+header{
+    background-color: rgba(226, 140, 12, 0.897);
+    text-align: center;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+.ow2{
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+
+}
+
+.personagens{
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: rgba(226, 140, 12, 0.897);
+
 }
 
 .winton{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 10%;
 }
 
 .diimfost{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 10%;
 }
 
 .bastinho{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 10%;
 }

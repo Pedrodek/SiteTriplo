@@ -1,7 +1,8 @@
 const sidebar = document.querySelector('aside');
 const buttonSidebar = document.querySelector('.sidebar-icon');
 const closeSidebar = document.querySelector('.sidebar-close-icon');
-const hrAside = document.querySelector('.hr-aside')
+const hrAside = document.querySelector('.hr-aside');
+const quad = document.querySelector('.quad');
 
 
 buttonSidebar.addEventListener('click', () => {
@@ -21,3 +22,8 @@ closeSidebar.addEventListener('click', () => {
     buttonSidebar.classList.remove('active');
     closeSidebar.classList.remove('active');
 });
+
+quad.addEventListener('click', () => {
+    quad.classList.toggle('clicked')
+    quad.children.item(0).classList.toggle('clicked')
+})
