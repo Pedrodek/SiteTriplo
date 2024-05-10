@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/bignoodletitling" rel="stylesheet">
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <div class="title">
+        <h1>Overwatch<img src="../images/over.png" alt=""></h1>
+    </div>
+    <div class="background"></div>
+    <form method="post">
+        <section class="formStart">
+            <fieldset>
+                <br>
+                <legend>Suas Informações</legend>
+                <h3>Email</h3>
+                <p>Insira o seu email: <input class="email" type="email" name="email"></p>
+                <br>
+                <h3>Senha</h3>
+                <p>Insira a sua senha: <input class="senha" type="password" name="senha"></p>
+                <br>
+            </fieldset>
+        </section>
+        <section class="radioSN">
+            <iframe class="vibing" src="https://www.youtube.com/embed/ypZjdTSaRrE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            <h3>Você gosta de chocolate?</h3>
+            <div class="chocolate-resposta">
+                <p><input type="radio" name="chocolate" value="sim">Sim</p>
+                <p><input type="radio" name="chocolate" value="nao">Não</p>
+            </div>
+        </section>
+        <section class="areas">
+            <fieldset>
+                <h3>Quais areas você mais gosta? =)</h3>
+                <div class="areas-div-checkbox">
+                    <div class="areas-div-checkbox-1">
+                        <p>CNT <input class="areas-checkbox" type="checkbox" name="CNT"></p>
+                        <p>CHS <input class="areas-checkbox" type="checkbox" name="CHS"></p>
+                        <p>MAT <input class="areas-checkbox" type="checkbox" name="MAT"></p>
+                    </div>
+                    <div class="areas-div-checkbox-2">
+                        <p>LGG <input class="areas-checkbox" type="checkbox" name="LGG"></p>
+                        <p>PA  <input class="areas-checkbox" type="checkbox" name="PA"></p>
+                        <p>PV  <input class="areas-checkbox" type="checkbox" name="PV"></p>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <section class="lista-de-opcoes">
+            <fieldset>
+                <div class="lista-de-opcoes-div">
+                    <h3>Qual sabor de sorvete você prefere?</h3>
+                    <select name="muitas_opcoes">
+                        <option selected value="Baunilha">Baunilha</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Morango">Morango</option>
+                        <option value="Creme">Creme</option>
+                        <option value="Biscoito e Creme">Biscoito e Creme</option>
+                        <option value="Frutas Tropicais">Frutas Tropicais</option>
+                    </select>
+                </div>
+            </fieldset>
+        </section>
+        <section class="Enviar-e-Limpar">
+            <div class="Enviar-e-Limpar-div">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </section>
+    </form>
 </body>
 </html>
